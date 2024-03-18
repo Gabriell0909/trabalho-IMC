@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="my.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <div id="main-login">
+      <div class="left-login">
+        <h1>Crie sua conta</h1>
+        <h3>E entre para nosso time</h3>
+        <img
+          src="prototyping-process-animate.svg"
+          class="left-login-img"
+          alt="Criando login"
+        />
+      </div>
+
+      <div class="right-login">
+        <div class="card-login">
+          <h1>Criar</h1>
+          <!-- <form action="cad.php" method="get"> -->
+          <div class="textfield">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" placeholder="usuário" required  id="nome"/>
+          </div>
+
+          <div class="textfield">
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              name="senha"
+              placeholder="Senha"
+              required
+              id="senha"
+            />
+
+            <label for="confirmar senha"></label>
+            <input
+              type="password"
+              name="confirmar"
+              placeholder="confirme a senha"
+              required
+              id="confirmar"
+            />
+          </div>
+
+          <label for="login"></label>
+          <input
+            type="submit"
+            value="login"
+            name="login"
+            class="btn-login"
+            onclick="validar()"
+            
+          />
+          <!-- </form> -->
+          <a href="/login/index.html">Fazer login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
